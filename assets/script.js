@@ -5,30 +5,28 @@ $(document).ready(function(){
 $("#currentDay").text(time);
 });
 
-var newDiv = $("<div>")
+var tableArray = [
+    {
+        time: ["9am","10am","11am","Noon", "1pm","2pm","3pm", "4pm", "5pm"],
+    },
+    {
+        text : "",
+    },
+    { 
+        saveBtn : "",
+    }];
 
-var timeArray = ["9am","10am","11am","Noon", "1pm","2pm","3pm", "4pm", "5pm"];
-for (var i=0; i>timeArray.length[i]; i++);
-console.log (timeArray);
-$("#timeblocks").append(timeArray);
-$(".container").append (timeArray);
+for (var i=0; i>tableArray.length[i]; i++);
+console.log (tableArray);
+$("#timeblocks").append(tableArray);
+$(".container").append (tableArray);
+
+var save = ("<button>");
+$("#save").append("");
 
 
-// var save = document.querySelector("#saveBtn")
-// ("SaveBtn").textContent = ""
-// unction Save  
-
-// saveBtn.addEventListener("click", function(event) {
-//   event.preventDefault();
-
-// save.addEventListener("click", function(event) {
-//     event.preventDefault();
-//     textArea.save = localStorage;
-//     elements.forEach(function(element) {
-//       element.textContent = "";
-//     });
-//   })
-//     var text = document.querySelector("").value;
-//       localStorage.setItem("text",save );
-
-var table = document.querySelector (".table")
+$(".saveBtn").addEventListener("click", function(event) {
+event.preventDefault();
+textArea.save = localStorage;
+console.log (textArea.save)
+});
