@@ -5,28 +5,21 @@ $(document).ready(function(){
 $("#currentDay").text(time);
 });
 
-var tableArray = [
-    {
-        time: ["9am","10am","11am","Noon", "1pm","2pm","3pm", "4pm", "5pm"],
-    },
-    {
-        text : "",
-    },
-    { 
-        saveBtn : "",
-    }];
-
-for (var i=0; i>tableArray.length[i]; i++);
-console.log (tableArray);
-$("#timeblocks").append(tableArray);
-$(".container").append (tableArray);
+var timeArray = ["9am","10am","11am","Noon", "1pm","2pm","3pm", "4pm", "5pm"];
+for (var i=0; i>timeArray.length[i]; i++);
+console.log (timeArray);
+$("#timeblocks").append(timeArray);
+$(".container").append (timeArray);
 
 var save = ("<button>");
 $("#save").append("");
 
 
-$(".saveBtn").addEventListener("click", function(event) {
+$save.addEventListener("click", function(event) {
 event.preventDefault();
 textArea.save = localStorage;
 console.log (textArea.save)
 });
+
+var text = document.querySelector("").value;
+localStorage.setItem("text",save )
