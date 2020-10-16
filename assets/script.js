@@ -2,7 +2,7 @@
 var saveBtn = document.querySelector(".SaveBtn")
 $(document).ready(function(){
     var time = moment().format('LLLL');
-$("#time").text(time);
+$("#currentDay").text(time);
 });
 
 
