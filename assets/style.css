@@ -32,12 +32,15 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+  padding: 10%;
+  margin-bottom: 15px;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
+  margin: 30px;
 }
 
 .hour {
@@ -74,6 +77,8 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
-textarea {
-  line-height: inherit;
+.time {
+  text-align: center;
+  margin:auto;
+  
 }
