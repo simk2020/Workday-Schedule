@@ -1,7 +1,8 @@
-
+const text = document.querySelector ("text")
 var past;
 var present;
 var future;
+var timeArray = ["9am","10am","11am","12pm", "1pm","2pm","3pm", "4pm", "5pm"];
 
 var saveBtn = document.querySelector(".SaveBtn")
 $(document).ready(function(){
@@ -18,10 +19,12 @@ console.log (textAreaContent);
 });
 
 
-var timeArray = ["9am","10am","11am","Noon", "1pm","2pm","3pm", "4pm", "5pm"];
+
 for (var i=0; i>timeArray.length[i]; i++);
 console.log (timeArray);
 console.log (localStorage);
+
+
 // localStorage.setItem("storeMyevent","timeArray[i]");
 // localStorage.getItem("storeMyevent");
 // // color coding based on past present and future 
